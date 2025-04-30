@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeFi Guardian</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    .ai-logo{
+        width: 90px;
+        height: 80px;
+    }
+    .hero {
+      padding: 100px 0;
+      text-align: center;
+    }
+    .risk-badge {
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: white;
+    }
+    .bg-safe { background-color: green; }
+    .bg-warning { background-color: orange; }
+    .bg-risky { background-color: red; }
+    .follow-us-icon-container {
+  margin: 0 15px;
+  color: white;
+  cursor: pointer;
+}
+.follow-us-icon-container:hover {
+  color: #0d6efd; /* Bootstrap primary */
+}
+
+  </style>
+</head>
+<body>
+      
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./logo.jpg" class="ai-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            
+            <div class="navbar-nav mr-auto">
+                <a class="nav-link active" id="navItem1" href="#wcu-section">
+                    About Us
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="#explore-menu-section" id="navItem2">Risk Button</a>
+                <a class="nav-link" href="#follow-us-section" id="navItem4">Follow Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+  
+  <section class="hero">
+    <h1>Is Your Token Safe?</h1>
+    <p class="lead">DeFi Guardian analyzes token risks using real-time blockchain data.</p>
+    <div class="input-group w-50 mx-auto mt-4">
+      <input type="text" class="form-control" placeholder="Enter Token" />
+      <button class="btn btn-primary">Check Risk Now</button>
+    </div>
+    <div class="text-muted mt-2">Try: SHIBA, USDT, or a random meme coin</div>
+  </section>
+
+  
+  <section class="container my-5">
+    <h2 class="text-center">Risk Analysis Result</h2>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="card text-dark">
+          <div class="card-body">
+            <h5 class="card-title">Token Info</h5>
+            <p><strong>Name:</strong> Shiba Inu</p>
+            <p><strong>Symbol:</strong> SHIB</p>
+            <p><strong>Created:</strong> Aug 2020</p>
+            <p><strong>Decimals:</strong> 18</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card text-dark">
+          <div class="card-body">
+            <h5 class="card-title">Risk Score</h5>
+            <p class="fs-4">Score: <strong>68/100</strong></p>
+            <span class="risk-badge bg-warning">Moderate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <h4>Risk Breakdown</h4>
+      <ul class="list-group text-dark">
+        <li class="list-group-item">🔍 Number of holders <strong>Potential Whale Control</strong></li>
+        <li class="list-group-item">❌ Ownership not renounced – <strong>Could be Rug Pull</strong></li>
+        <li class="list-group-item">⏳ Liquidity locked for 15 days – <strong>High Unlock Risk</strong></li>
+        <li class="list-group-item">🛡 Self-audited – <strong>Manually Verify</strong></li>
+        
+
+      </ul>
+    </div>
+
+    <div class="mt-4">
+      <h5>Custom Flags</h5>
+      <div class="alert alert-warning">⚠ Ownership not renounced</div>
+      <div class="alert alert-danger">⚠ Token age &lt; 30 days</div>
+      <button class="btn btn-outline-light mt-2">📋 Copy Report</button>
+    </div>
+  </section>
+
+
+  <section id="about" class="container my-5">
+    <h2 class="text-center">About DeFi Guardian</h2>
+    <p class="mt-3">
+      DeFi Guardian helps users assess token safety by analyzing real-time data from the blockchain.
+      We built this to help prevent rug pulls and scams in the DeFi space.
+    </p>
+    <h5>How the Score Works</h5>
+    <p>
+      The score is based on token age, top holder distribution, liquidity lock status, audit presence,
+      and more. We use data from Moralis, Etherscan, and The Graph to fetch live token data.
+    </p>
+  </section>
+
+  <!-- Follow Us Section -->
+<div class="follow-us-section pt-5 pb-5" id="follow-us-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="follow-us-section-heading text-center">Follow Us</h1>
+          <div class="d-flex flex-row justify-content-center gap-4">
+            <div class="follow-us-icon-container">
+              <i class="fa-brands fa-twitter fa-2x icon"></i>
+            </div>
+            <div class="follow-us-icon-container">
+              <i class="fa-brands fa-instagram fa-2x icon"></i>
+            </div>
+            <div class="follow-us-icon-container">
+              <i class="fa-brands fa-facebook fa-2x icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <footer id="footer" class="text-center p-4 bg-dark text-light">
+    <div>
+      <a href="#" class="text-light me-3">GitHub</a>
+      <a href="#" class="text-light me-3">Devfolio</a>
+      <a href="#" class="text-light">Twitter</a>
+    </div>
+    <p class="mt-2">Built with ❤ at AppXcess AI & Web3 Hackathon 2025</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
